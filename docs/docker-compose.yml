@@ -1,0 +1,7 @@
+services:
+    latex:
+      build:
+        context: .
+      volumes:
+          - ./latex:/home/latex:Z
+      command: bash -c 'make clean && make'
